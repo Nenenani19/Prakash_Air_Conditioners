@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Prakash Air Conditioners Built for Cooling & Engineered for Every Space</title>
+<meta name="description" content="Prakash Air Conditioners — LG system air-conditioning specialists across Andhra Pradesh &amp; Telangana. Installation, servicing, maintenance &amp; complaint support.">
+
+<!-- Fonts: Display (editorial signature) / Modern (grotesk) / Technical (mono) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- model-viewer for robust, high quality glTF/GLB rendering -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+<!--  NOISE / GRAIN OVERLAY  -->
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!--  PRELOADER  -->
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">
+    <span>Prakash</span><span>Air</span><span>Conditioners</span>
+  </div>
+  <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderFill"></div></div>
+</div>
+
+<!--  NAVIGATION  -->
+<header class="site-nav" id="siteNav">
+  <a href="#home" class="nav-logo" data-scramble="PRAKASH">
+    <span class="nav-logo-mark">PAC</span>
+    <span class="nav-logo-text">Prakash&nbsp;Air&nbsp;Conditioners</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home"><span>Home</span></a>
+    <a href="#showcase"><span>3D&nbsp;Showcase</span></a>
+    <a href="#products"><span>Products</span></a>
+    <a href="#features"><span>Features</span></a>
+    <a href="#awards"><span>Awards</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.4"/><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 2.5v2.4"/><path d="M12 19.1v2.4"/><path d="M4.2 4.2l1.7 1.7"/><path d="M18.1 18.1l1.7 1.7"/><path d="M2.5 12h2.4"/><path d="M19.1 12h2.4"/><path d="M4.2 19.8l1.7-1.7"/><path d="M18.1 5.9l1.7-1.7"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<!--  PROGRESS RAIL  -->
+<div class="scroll-rail" aria-hidden="true"><div class="scroll-rail-fill" id="scrollRailFill"></div></div>
+
+<main>
+
+  <!--  HOME / CINEMATIC HERO  -->
+  <section class="hero" id="home">
+    <canvas id="airCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="hero-ring hero-ring-a" aria-hidden="true"></div>
+    <div class="hero-ring hero-ring-b" aria-hidden="true"></div>
+
+    <div class="hero-float-icons" aria-hidden="true">
+      <svg class="hf-icon hf-1" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4.5 6l15 12M19.5 6l-15 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      <svg class="hf-icon hf-2" viewBox="0 0 32 20" fill="none"><path d="M2 6h20a4 4 0 1 0-4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M2 13h24a4 4 0 1 1-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      <svg class="hf-icon hf-3" viewBox="0 0 24 24" fill="none"><path d="M12 3v10.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="12" cy="17" r="3.2" stroke="currentColor" stroke-width="1.3"/><path d="M9.5 6h5M9.5 9h5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+      <svg class="hf-icon hf-4" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4.5 6l15 12M19.5 6l-15 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      <svg class="hf-icon hf-5" viewBox="0 0 24 24" fill="none"><path d="M12 3c3 4 5 6.6 5 9.5a5 5 0 1 1-10 0C7 9.6 9 7 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-line"><span>&nbsp;</span></p>
+
+      <h1 class="hero-signature" id="heroSignature" aria-label="Prakash Air Conditioners">
+        <span class="sig-line sig-line-1">Prakash</span>
+        <span class="sig-line sig-line-2">Air Conditioners</span>
+      </h1>
+
+      <p class="hero-tagline" id="heroTagline">Built for cooling & engineered for every space.</p>
+
+      <div class="hero-cta reveal-fade">
+        <a href="#showcase" class="btn btn-ghost" data-ripple><span>Explore..</span></a>
+        <div class="hero-scroll-cue">
+          <span>Scroll</span>
+          <div class="scroll-cue-line"><i></i></div>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal-fade" aria-hidden="true">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count-to="6">0</span>
+          <span class="hero-stat-label">System Types</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count-to="15+">0</span>
+          <span class="hero-stat-label">Cities Served</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count-to="22" data-suffix=" Cr+">0</span>
+          <span class="hero-stat-label">FY25–26 Turnover</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-meta reveal-fade" aria-hidden="true">
+      <span></span><span class="dot"></span><span></span>
+    </div>
+  </section>
+
+  <!-- ================= INTRO STATEMENT ================= -->
+  <section class="statement">
+    <p class="statement-text">
+      <span class="sw">Every</span> <span class="sw">room</span> <span class="sw">breathes</span>
+      <span class="sw">differently.</span> <span class="sw sw-accent">We</span>
+      <span class="sw sw-accent">design</span> <span class="sw sw-accent">the</span>
+      <span class="sw sw-accent">air</span> <span class="sw sw-accent">around</span>
+      <span class="sw sw-accent">it</span><span class="sw sw-accent"></span>
+      <span class="sw">with</span> <span class="sw">LG</span> <span class="sw">systems</span>
+      <span class="sw">selected,</span> <span class="sw">installed</span> <span class="sw">and</span>
+      <span class="sw">maintained</span> <span class="sw">by</span> <span class="sw">hand.</span>
+    </p>
+  </section>
+
+  <!-- ================= 3D PRODUCT SHOWCASE ================= -->
+  <section class="showcase" id="showcase">
+
+    <div class="showcase-intro">
+      <span class="section-kicker">/ 01</span>
+      <h2 class="section-title">The Systems</h2>
+      <p class="section-sub">Nine ways to cool a space — each one engineered around how a room is actually used. Scroll to move through the range.</p>
+    </div>
+
+    <!-- Product 01 — Window AC -->
+    <article class="product-stage" id="p-window-ac" data-index="01" data-env="window">
+      <div class="product-stage-inner side-right">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">01</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/01-window-ac.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="20deg 76deg 3m"
+            min-camera-orbit="auto 58deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-linear" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 01 · SINGLE-WINDOW FIT</p>
+          <h3 class="product-name" data-decode="Window AC">Window AC</h3>
+          <p class="product-desc">The ultimate all-in-one cooling solution — a sleek, self-contained unit that slides right into your window or wall opening. Compressor and condenser are built into a single compact chassis, delivering powerful room cooling with zero outdoor unit, zero complicated installs, and maximum space efficiency.</p>
+          <ul class="product-tags">
+            <li>True All-in-One Design</li>
+            <li>No Outdoor Unit Required</li>
+            <li>Plug-and-Play Installation</li>
+            <li>Ultra-Compact Footprint</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>Ideal For</span><p>Single rooms · Fast, hassle-free installs</p></div>
+            <div><span>INSTALLATION</span><p>Simply place in a window or wall opening  onepiece unit, ready to cool in minutes.</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 02 — Wall Mounted -->
+    <article class="product-stage" id="p-wall-mounted" data-index="02" data-env="room">
+      <div class="product-stage-inner side-left">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">02</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/split_AC.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="18deg 78deg 3.2m"
+            min-camera-orbit="auto 60deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-linear" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 02 · CEILING-FREE INSTALLATION</p>
+          <h3 class="product-name" data-decode="Wall Mounted">Wall Mounted</h3>
+          <p class="product-desc">A powerful cooling and heating solution that installs quickly against a single wall, bringing optimised comfort to bedrooms, living rooms and private studies without touching the ceiling line.</p>
+          <ul class="product-tags">
+            <li>6-Step Vane Control</li>
+            <li>Jet Cool</li>
+            <li>Auto Cleaning</li>
+            <li>Dual Sensing Control</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>Bedrooms · Living rooms · Offices</p></div>
+            <div><span>INSTALLATION</span><p>Single wall, split indoor / outdoor</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 03 — Floor Standing -->
+    <article class="product-stage" id="p-floor-stand" data-index="03" data-env="hall">
+      <div class="product-stage-inner side-right">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">03</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/standing_ac.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="-18deg 78deg 3.6m"
+            min-camera-orbit="auto 58deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-linear-long" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 03 · FLOOR-LEVEL COOLING</p>
+          <h3 class="product-name" data-decode="Floor Standing">Floor Standing</h3>
+          <p class="product-desc">A vertical, free-standing cabinet built for halls, showrooms and open commercial floors — placed directly on the ground rather than mounted, with airflow engineered to carry across a wide, high-footfall space.</p>
+          <ul class="product-tags">
+            <li>Free-Standing Cabinet</li>
+            <li>High Airflow Volume</li>
+            <li>Large-Area Coverage</li>
+            <li>Commercial-Grade Build</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>Showrooms · Halls · Large floors</p></div>
+            <div><span>INSTALLATION</span><p>Floor-mounted, no wall or ceiling needed</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 04 — 1 Way Cassette -->
+    <article class="product-stage" id="p-cassette-1way" data-index="04" data-env="ceiling">
+      <div class="product-stage-inner side-left">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">04</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/2_way.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="-24deg 72deg 3m"
+            min-camera-orbit="auto 55deg auto"
+            max-camera-orbit="auto 95deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-fan" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 04 · SLIM CEILING PROFILE</p>
+          <h3 class="product-name" data-decode="1-Way Cassette">1-Way Cassette</h3>
+          <p class="product-desc">A single-direction cassette with an elegant, discreet profile that fits into narrow ceiling spaces — an ideal choice for compact rooms and corridor-adjacent spaces that still deserve a clean finish.</p>
+          <ul class="product-tags">
+            <li>Slim, 132mm Body</li>
+            <li>Even Air Distributor</li>
+            <li>ThinQ App Ready</li>
+            <li>5-Step Filtration</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>Compact rooms · Narrow ceilings</p></div>
+            <div><span>AIRFLOW</span><p>Single-direction, even distribution</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 05 — 4 Way Cassette -->
+    <article class="product-stage" id="p-cassette-4way" data-index="05" data-env="ceiling-lounge">
+      <div class="product-stage-inner side-right">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">05</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/4_way_model.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="20deg 68deg 3.4m"
+            min-camera-orbit="auto 55deg auto"
+            max-camera-orbit="auto 95deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-quad" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 05 · FOUR-DIRECTION COVERAGE</p>
+          <h3 class="product-name" data-decode="4-Way Cassette">4-Way Cassette</h3>
+          <p class="product-desc">A multi-functional cassette that spreads air across four directions independently, with human-detection sensing that balances energy saving and comfort in living rooms and open-plan spaces.</p>
+          <ul class="product-tags">
+            <li>Independent 4-Vane Control</li>
+            <li>Human Detection Sensor</li>
+            <li>PM1.0 Air Purification</li>
+            <li>Unibody Ceiling Panel</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>Living rooms · Open-plan interiors</p></div>
+            <div><span>AIRFLOW</span><p>Four-direction, independently vaned</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 06 — Low Static Duct -->
+    <article class="product-stage" id="p-duct-low" data-index="06" data-env="duct">
+      <div class="product-stage-inner side-left">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">06</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/low_static.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="10deg 80deg 3.4m"
+            min-camera-orbit="auto 60deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-linear" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 06 · CONCEALED COOLING</p>
+          <h3 class="product-name" data-decode="Low Static Duct">Low Static Duct</h3>
+          <p class="product-desc">A concealed cooling and heating solution built for a minimised duct height, hiding the entire system above a false ceiling while keeping precise temperature control across the room below.</p>
+          <ul class="product-tags">
+            <li>Slim &amp; Compact Body</li>
+            <li>Low Noise Level</li>
+            <li>E.S.P. Airflow Control</li>
+            <li>Easy Filter Access</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>False ceilings · Aesthetic-first interiors</p></div>
+            <div><span>INSTALLATION</span><p>Fully concealed, ducted supply</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 07 — High Static Duct -->
+    <article class="product-stage" id="p-duct-high" data-index="07" data-env="duct-large">
+      <div class="product-stage-inner side-right">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">07</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/07-duct-high-static.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="-16deg 78deg 3.6m"
+            min-camera-orbit="auto 60deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-linear-long" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 07 · LONGER DUCT RUNS</p>
+          <h3 class="product-name" data-decode="High Static Duct">High Static Duct</h3>
+          <p class="product-desc">Built for larger layouts and longer duct runs, the high static duct pushes air further and harder across multi-room ductwork — suited to bigger homes and light-commercial floor plans.</p>
+          <ul class="product-tags">
+            <li>Higher External Static Pressure</li>
+            <li>Multi-Room Duct Runs</li>
+            <li>BLDC Motor Control</li>
+            <li>Detachable Panel Service</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>APPLICATION</span><p>Larger homes · Light-commercial spaces</p></div>
+            <div><span>INSTALLATION</span><p>Extended ductwork, multi-outlet</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Product 08 — LG Multi V S -->
+    <article class="product-stage" id="p-multi-v-s" data-index="08" data-env="exterior">
+      <div class="product-stage-inner side-left">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">08</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/08-multi-v-s.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="26deg 76deg 3.6m"
+            min-camera-orbit="auto 55deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-exterior" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 08 · COMPACT VRF</p>
+          <h3 class="product-name" data-decode="LG Multi V S">LG Multi V S</h3>
+          <p class="product-desc">A compact yet powerful VRF outdoor unit that lets one condenser serve several indoor units at once — a smaller footprint solution for residences and small offices that still asks for centralised control.</p>
+          <ul class="product-tags">
+            <li>One Outdoor, Multiple Indoors</li>
+            <li>Reduced Footprint</li>
+            <li>Black Fin Corrosion Resistance</li>
+            <li>Smart Load Energy Control</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>SYSTEM</span><p>Single outdoor unit, multi-zone</p></div>
+            <div><span>APPLICATION</span><p>Homes &amp; small offices, multiple rooms</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="system-flow" aria-hidden="true">
+        <span>INDOOR UNIT</span><i></i><span>REFRIGERANT PIPING</span><i></i><span>OUTDOOR UNIT</span>
+      </div>
+    </article>
+
+    <!-- Product 09 — LG Multi V 5 -->
+    <article class="product-stage" id="p-multi-v-5" data-index="09" data-env="commercial">
+      <div class="product-stage-inner side-right">
+        <div class="product-visual">
+          <div class="product-number" aria-hidden="true">09</div>
+          <model-viewer
+            class="product-model"
+            data-src="assets/models/vrf_outdoor.glb"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            camera-orbit="-22deg 74deg 4m"
+            min-camera-orbit="auto 55deg auto"
+            max-camera-orbit="auto 96deg auto"
+            field-of-view="30deg"
+            shadow-intensity="0.9"
+            shadow-softness="0.85"
+            exposure="1.05"
+            environment-image="neutral"
+            reveal="manual"
+            loading="lazy">
+          </model-viewer>
+          <div class="airflow-field af-exterior" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="product-copy">
+          <p class="product-eyebrow">SYSTEM 09 · SCALABLE COMMERCIAL VRF</p>
+          <h3 class="product-name" data-decode="LG Multi V 5">LG Multi V 5</h3>
+          <p class="product-desc">The larger-scale answer for buildings that grow — one system, distributed across many indoor units, engineered to cover entire floors or full commercial buildings from a single coordinated outdoor system.</p>
+          <ul class="product-tags">
+            <li>One System, Many Zones</li>
+            <li>Built for Larger Spaces</li>
+            <li>Centralised Control Ready</li>
+            <li>Long Piping Flexibility</li>
+          </ul>
+          <div class="product-meta-row">
+            <div><span>SYSTEM</span><p>Outdoor VRF, large indoor-unit count</p></div>
+            <div><span>APPLICATION</span><p>Commercial buildings, institutions</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="system-flow" aria-hidden="true">
+        <span>ONE SYSTEM</span><i></i><span>MULTIPLE INDOOR UNITS</span><i></i><span>LARGER SPACE</span>
+      </div>
+    </article>
+
+  </section>
+
+  <!--  PRODUCTS GRID (catalogue view)  -->
+  <section class="products-grid-section" id="products">
+    <div class="section-head">
+      <span class="section-kicker">/ 02</span>
+      <h2 class="section-title">Product Catalogue</h2>
+      <p class="section-sub">Every system, at a glance. Tap a card to jump back into its 3D presentation.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <a href="#p-window-ac" class="product-card" data-reveal>
+        <div class="product-card-img is-icon"><img src="assets/images/window.png" alt="LG Wall Mounted Window air conditioner" loading="lazy" width="1122" height="1402">
+          
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-index">01</span>
+          <h3>Window AC</h3>
+          <p>All-in-one unit for a single window or wall opening, no outdoor unit required.</p>
+          <ul><li>All-in-One Unit</li><li>Simple Installation</li><li>Compact Footprint</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-wall-mounted" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-wall-mounted.webp" alt="LG Wall Mounted split air conditioner" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">02</span>
+          <h3>Wall Mounted</h3>
+          <p>Quick-install split system for a single wall, tuned for bedrooms and living spaces.</p>
+          <ul><li>6-Step Vane Control</li><li>Jet Cool</li><li>Auto Cleaning</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-floor-stand" class="product-card" data-reveal>
+        <div class="product-card-img is-icon">
+          <img src="assets/images/floor_stand.png" alt="LG Floor Standing air conditioner" loading="lazy" width="1122" height="1402">
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-index">03</span>
+          <h3>Floor Standing</h3>
+          <p>Free-standing cabinet for halls, showrooms and large open commercial floors.</p>
+          <ul><li>High Airflow Volume</li><li>Large-Area Coverage</li><li>Commercial-Grade</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-cassette-1way" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-1way.webp" alt="LG 1-Way Cassette air conditioner" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">04</span>
+          <h3>1-Way Cassette</h3>
+          <p>Slim 132mm ceiling cassette for narrow ceiling voids and compact interiors.</p>
+          <ul><li>Even Air Distributor</li><li>ThinQ App Ready</li><li>5-Step Filtration</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-cassette-4way" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-4way.webp" alt="LG 4-Way Cassette air conditioner" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">05</span>
+          <h3>4-Way Cassette</h3>
+          <p>Four-direction ceiling cassette with human detection for open-plan living rooms.</p>
+          <ul><li>Independent 4-Vane Control</li><li>Human Detection</li><li>PM1.0 Purification</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-duct-low" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-low-static.webp" alt="LG Low Static Duct air conditioner" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">06</span>
+          <h3>Low Static Duct</h3>
+          <p>Fully concealed ducted system with a minimised duct height for false ceilings.</p>
+          <ul><li>Slim &amp; Compact</li><li>Low Noise</li><li>E.S.P. Control</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-duct-high" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-high-static.webp" alt="LG High Static Duct air conditioner" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">07</span>
+          <h3>High Static Duct</h3>
+          <p>Higher-pressure ducted system built for longer runs across bigger floor plans.</p>
+          <ul><li>Higher Static Pressure</li><li>Multi-Room Runs</li><li>BLDC Motor</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-multi-v-s" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-multi-v-s.webp" alt="LG Multi V S VRF outdoor unit" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">08</span>
+          <h3>LG Multi V S</h3>
+          <p>Compact VRF outdoor unit serving multiple indoor units from one system.</p>
+          <ul><li>Reduced Footprint</li><li>Black Fin Protection</li><li>Smart Load Control</li></ul>
+        </div>
+      </a>
+
+      <a href="#p-multi-v-5" class="product-card" data-reveal>
+        <div class="product-card-img"><img src="assets/images/product-multi-v-5.webp" alt="LG Multi V 5 VRF outdoor unit" loading="lazy" width="1122" height="1402"></div>
+        <div class="product-card-body">
+          <span class="product-card-index">09</span>
+          <h3>LG Multi V 5</h3>
+          <p>Scalable commercial VRF system for larger buildings and multi-zone installs.</p>
+          <ul><li>Large Indoor-Unit Count</li><li>Centralised Control</li><li>Long Piping Runs</li></ul>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!--  FEATURES  -->
+  <section class="features-section" id="features">
+    <div class="section-head">
+      <span class="section-kicker">/ 03</span>
+      <h2 class="section-title">Engineered Details</h2>
+      <p class="section-sub">The LG technology behind every system we install — the reasons a Prakash installation keeps performing long after the day it's switched on.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">01</span>
+        <h3>Cost Saving</h3>
+        <p>Inverter technology that delivers powerful, quiet performance while keeping energy consumption in check.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">02</span>
+        <h3>Space Saving</h3>
+        <p>Compact outdoor units with a sleek footprint that sit comfortably outside the home, freeing up living space.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">03</span>
+        <h3>Smart Controls</h3>
+        <p>Every system pairs with the LG ThinQ app — on/off, mode, temperature and filter management from a phone.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">04</span>
+        <h3>Voice Control</h3>
+        <p>Simple, time-saving voice access built for everyday convenience, no remote required.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">05</span>
+        <h3>Superior Air Quality</h3>
+        <p>Multi-step filtration removes fine dust and airborne particles, with real-time air quality monitoring.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">06</span>
+        <h3>Durability</h3>
+        <p>LG's Black Fin heat exchanger is built to perform even in corrosive, coastal-adjacent environments.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">07</span>
+        <h3>Silent Operation</h3>
+        <p>Low-noise operation modes reduce night-time sound output for an undisturbed room.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <span class="feature-index">08</span>
+        <h3>Modern Design</h3>
+        <p>Award-recognised indoor unit design that sits quietly into a room instead of dominating it.</p>
+      </div>
+    </div>
+
+    <!-- Services within features -->
+    <div class="services-strip">
+      <div class="services-strip-head">
+        <h3>What Our PAC Does On-Site</h3>
+        <p>From first install to the call you make years later — one team, four responsibilities.</p>
+      </div>
+      <div class="services-strip-grid">
+        <figure class="service-photo" data-reveal>
+          <img src="assets/images/installtion.png" alt="Technician installing an outdoor HVAC unit" loading="lazy">
+          <figcaption><span>01</span>Installation</figcaption>
+        </figure>
+        <figure class="service-photo" data-reveal>
+          <img src="assets/images/water_wash.png" alt="Technician servicing a split air conditioner" loading="lazy">
+          <figcaption><span>02</span>Servicing</figcaption>
+        </figure>
+        <figure class="service-photo" data-reveal>
+          <img src="assets/images/service-maintenance.webp" alt="Engineer refilling refrigerant on an HVAC system" loading="lazy">
+          <figcaption><span>03</span>Maintenance</figcaption>
+        </figure>
+        <figure class="service-photo" data-reveal>
+          <img src="assets/images/service-complaint.webp" alt="Electrician checking a condenser unit" loading="lazy">
+          <figcaption><span>04</span>Complaint Support</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!--  ANNUAL TURNOVER  -->
+  <section class="turnover-section" id="turnover">
+    <div class="section-head">
+      <span class="section-kicker">/ 04</span>
+      <h2 class="section-title">Annual Turnover</h2>
+      <p class="section-sub">Year-on-year growth, reflecting steady progress and strong financial performance.</p>
+    </div>
+
+    <div class="turnover-body">
+      <div class="turnover-chart" role="img" aria-label="Annual turnover bar chart: FY22-23 8.09 crore, FY23-24 12.23 crore, FY24-25 16.43 crore, FY25-26 projected 22 crore plus">
+        <div class="turnover-bar-col" data-reveal>
+          <span class="turnover-value" data-count-to="8.09" data-decimals="2" data-prefix="₹" data-suffix=" Cr">₹0 Cr</span>
+          <div class="turnover-bar" data-grow-to="37"></div>
+          <span class="turnover-year">FY 2022–23</span>
+        </div>
+        <div class="turnover-bar-col" data-reveal>
+          <span class="turnover-value" data-count-to="12.23" data-decimals="2" data-prefix="₹" data-suffix=" Cr">₹0 Cr</span>
+          <div class="turnover-bar" data-grow-to="56"></div>
+          <span class="turnover-year">FY 2023–24</span>
+        </div>
+        <div class="turnover-bar-col" data-reveal>
+          <span class="turnover-value" data-count-to="16.43" data-decimals="2" data-prefix="₹" data-suffix=" Cr">₹0 Cr</span>
+          <div class="turnover-bar" data-grow-to="75"></div>
+          <span class="turnover-year">FY 2024–25</span>
+        </div>
+        <div class="turnover-bar-col is-projected" data-reveal>
+          <span class="turnover-value" data-count-to="22" data-decimals="0" data-prefix="₹" data-suffix=" Cr+">₹0 Cr+</span>
+          <div class="turnover-bar" data-grow-to="100"></div>
+          <span class="turnover-year">FY 2025–26<em>Projected</em></span>
+        </div>
+      </div>
+
+      <p class="turnover-note">This growth reflects our commitment to excellence, client trust, and long-term value creation.</p>
+    </div>
+  </section>
+
+  <!--  AWARDS & ACHIEVEMENTS  -->
+  <section class="awards-section" id="awards">
+    <div class="section-head">
+      <span class="section-kicker">/ 05</span>
+      <h2 class="section-title">Awards &amp; Achievements</h2>
+      <p class="section-sub">Recognition earned the way it should be — through performance, year after year.</p>
+    </div>
+
+    <div class="awards-grid">
+      <div class="award-card" data-reveal>
+        <svg class="award-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M17 29.5 14 44l10-5.5L34 44l-3-14.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M19 19.5l3.4 3.4L30 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="award-year">2025</span>
+        <h3>Highest Product Sale<br>— Non&nbsp;Metro</h3>
+      </div>
+      <div class="award-card" data-reveal>
+        <svg class="award-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M17 29.5 14 44l10-5.5L34 44l-3-14.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M19 19.5l3.4 3.4L30 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="award-year">2025</span>
+        <h3>Highest Product Sale<br>— Andhra&nbsp;Pradesh</h3>
+      </div>
+      <div class="award-card" data-reveal>
+        <svg class="award-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M17 29.5 14 44l10-5.5L34 44l-3-14.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M19 19.5l3.4 3.4L30 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="award-year">2025</span>
+        <h3>Outstanding Service<br>Performance</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--  ABOUT / COMPANY  -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <span class="section-kicker">/ 06</span>
+      <h2 class="about-heading">
+        Prakash Air Conditioners keeps<br>
+        LG systems running — <em>quietly,</em><br>
+        reliably, on schedule.
+      </h2>
+      <p class="about-body">
+        We work exclusively with LG air-conditioning systems, covering installation, servicing,
+        routine maintenance and complaint support across Andhra Pradesh and Telangana. Every
+        system on this page is one we actually install and stand behind after the sale.
+      </p>
+
+      <div class="about-services">
+        <span>Installation</span><span>Servicing</span><span>Maintenance</span><span>Complaint Support</span>
+      </div>
+
+      <div class="clients-marquee" aria-label="Organisations we have worked with">
+        <div class="clients-track">
+          <span>RELIANCE TRENDS</span><span>BAJAJ ELECTRONICS</span><span>GALAXY</span>
+          <span>VVITU</span><span>WNS</span><span>MEDICOVER CANCER INSTITUTE</span>
+          <span>PRADHAN HOSPITALS</span><span>LIFE LINE HOSPITAL</span><span>SURYA GLOBAL HOSPITALS</span>
+          <span>LENSKART</span><span>GCON</span><span>HYDERABAD CENTRAL UNIVERSITY</span><span>MANY MORE..</span>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  FINAL / CONTACT  -->
+  <section class="final-section" id="contact">
+    <div class="final-inner">
+      <h2 class="final-headline">
+        <span class="fw">Cooling</span>
+        <span class="fw">is</span>
+        <span class="fw">our</span>
+        <span class="fw fw-accent">craft.</span>
+      </h2>
+
+      <div class="final-grid">
+        <div class="final-brand">
+          <p class="final-brand-name">Prakash Air Conditioners</p>
+          <p class="final-brand-services">Installation · Servicing · Maintenance · Complaint Support</p>
+
+          <div class="social-row">
+            <a href="https://instagram.com/prakash_air_conditioners" target="_blank" rel="noopener" class="social-link" data-ripple>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+              <span>@prakash_air_conditioners</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="final-contact">
+          <div class="contact-row">
+            <span>EMAIL</span>
+            <a href="mailto:prakashairconditioners@gmail.com">prakashairconditioners@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span>VIJAYAWADA</span>
+            <p><a href="tel:+919866555281">098665 55281</a> &nbsp;·&nbsp; <a href="tel:+919966124984">99661 24984</a></p>
+          </div>
+          <div class="contact-row">
+            <span>HYDERABAD</span>
+            <p><a href="tel:+919948815104">99488 15104</a> &nbsp;·&nbsp; <a href="tel:+918523879212">85238 79212</a></p>
+          </div>
+          <div class="contact-row">
+            <span>SERVICE AREA</span>
+            <p>Andhra Pradesh &amp; Telangana</p>
+          </div>
+        </div>
+      </div>
+
+      <!--  CONTACT FORM  -->
+      <div class="contact-form-wrap">
+        <div class="contact-form-head">
+          <span class="section-kicker">/ GET IN TOUCH</span>
+          <h3>Tell us what you need</h3>
+          <p>Fill this in and it opens a ready-to-send email in your mail app, addressed straight to our team.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Name</span>
+              <input type="text" name="name" id="cf-name" placeholder="Your full name" required>
+            </label>
+            <label class="form-field">
+              <span>Phone</span>
+              <input type="tel" name="phone" id="cf-phone" placeholder="Your phone number" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>I need</span>
+              <select name="type" id="cf-type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Installation">Installation</option>
+                <option value="Servicing">Servicing</option>
+                <option value="Complaint">Complaint</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>Your Email</span>
+              <input type="email" name="email" id="cf-email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <label class="form-field form-field-full">
+            <span>Message <em>(optional)</em></span>
+            <textarea name="message" id="cf-message" rows="3" placeholder="Anything we should know before we call?"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-solid form-submit" data-ripple>
+            <span>Send via Email</span>
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M10 4.5l5.5 5.5-5.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>© <span id="yearNow"></span> Prakash Air Conditioners</span>
+      <span>LG System Air Conditioning Partner</span>
+    </footer>
+  </section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
