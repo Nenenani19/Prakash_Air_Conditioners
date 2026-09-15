@@ -43,7 +43,7 @@ html[data-theme="light"]{
 *,*::before,*::after{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; background:var(--bg); }
 
-/* completely hidden scrollbar (still fully scrollable) across engines */
+/* hidden scrollbars */
 html{ scrollbar-width:none; -ms-overflow-style:none; }
 html::-webkit-scrollbar{ width:0; height:0; display:none; }
 body::-webkit-scrollbar{ width:0; height:0; display:none; }
@@ -94,7 +94,6 @@ h1,h2,h3,h4,p{ margin:0; }
 .btn-solid svg{ width:15px; height:15px; transition:transform .3s var(--ease-out); }
 .btn-solid:hover svg{ transform:translateX(3px); }
 
-/* responsive press + ripple animation, applied to any [data-ripple] element */
 [data-ripple]{ position:relative; overflow:hidden; transition: transform .18s var(--ease-out), box-shadow .3s var(--ease-out), border-color .3s, color .3s, background .3s; }
 [data-ripple]:active{ transform:scale(.95); }
 .ripple-dot{
@@ -103,7 +102,7 @@ h1,h2,h3,h4,p{ margin:0; }
 }
 @keyframes rippleOut{ to{ transform:scale(2.6); opacity:0; } }
 
-/* ---------------------------------- grain / cursor ---------------------------------- */
+/*  grain / cursor  */
 .grain-overlay{
   position:fixed; inset:0; pointer-events:none; z-index:9990; opacity:.035; mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
@@ -117,7 +116,7 @@ h1,h2,h3,h4,p{ margin:0; }
 }
 @media (hover:hover) and (pointer:fine){ .cursor-dot{ display:block; } }
 
-/* ---------------------------------- preloader ---------------------------------- */
+/*  preloader  */
 .preloader{
   position:fixed; inset:0; background:#0a0b0d; z-index:10000;
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px;
@@ -132,7 +131,7 @@ h1,h2,h3,h4,p{ margin:0; }
 .preloader-bar{ width:180px; height:1px; background:rgba(255,255,255,0.12); overflow:hidden; }
 .preloader-bar-fill{ width:0%; height:100%; background:#c8a165; transition:width .3s var(--ease-out); }
 
-/* ---------------------------------- nav ---------------------------------- */
+/*  nav  */
 .site-nav{
   position:fixed; top:0; left:0; right:0; z-index:900;
   display:flex; align-items:center; justify-content:space-between;
